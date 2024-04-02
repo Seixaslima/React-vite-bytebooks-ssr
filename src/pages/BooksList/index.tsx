@@ -53,7 +53,7 @@ const BooksList: React.FC = () => {
 							<PageContent>
 								<div className='flex flex-wrap justify-center container items-start'>
 									{showingItems.map((book) => (
-										<div className='flex flex-col items-start justify-center w-[246px] m-4'>
+										<div key={book.id} className='flex flex-col items-start justify-center w-[246px] m-4'>
 											<img src={book.image} alt={book.title} />
 											<div className='flex flex-col'>
 												<h3 className='text-lg text-[#002F52] font-bold text-left my-2'>
