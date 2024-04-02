@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-import Header from '../../components/Header';
 import PageContent from '../../components/PageContent';
 import PageSection from '../../components/PageSection';
 import React, { useEffect } from 'react';
@@ -27,9 +26,6 @@ const BooksList: React.FC = () => {
 		<React.Fragment>
 			{!isLoading && (
 				<React.Fragment>
-					<Header>
-						<img alt='ByteBooks Logo' src='./logo.png' height={70} />
-					</Header>
 					<PageSection>
 						<h2 className='text-4xl text-white font-bold'>Já sabe por onde começar?</h2>
 						<h3 className='text-base text-white font-bold mt-4'>
